@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Download / Upload Test</title>
+</head>
+<body>
+	<h1>Download a file (method 1)</h1>
+	<form action="rest/download/1" method="get">
+		<input name="file" type="text"/><br/>
+		<input type="submit" value="Download">
+	</form>
+	<h1>Download a file (method 2)</h1>
+	<form action="rest/download/2" method="get">
+		<input name="file" type="text"/><br/>
+		<input type="submit" value="Download">
+	</form>
+	<h1>Download a file (method 3)</h1>
+	<form action="rest/download/3" method="get">
+		<input name="file" type="text"/><br/>
+		<input type="submit" value="Download">
+	</form>
+	
+	<h1>Upload a file (method 1)</h1>
+	<form action="rest/upload/1" method="post" enctype="multipart/form-data">
+		<input name="name" type="text"/><br/>
+		<input name="data" type="file"/><br/>
+		<input type="submit" value="Upload">
+	</form>
+</body>
+</html> 
